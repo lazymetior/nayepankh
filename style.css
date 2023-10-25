@@ -1,0 +1,164 @@
+body {
+    background-color: #ecefe2; /* Light gray background color for the entire site */
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+
+.section-separator {
+    width: 100%;
+    height: 2px; 
+    background-color: black; 
+    margin: 20px 0; 
+  }
+
+
+  /* Navbar Styles */
+
+  nav .container img{
+    margin-right: 25px;
+  }
+
+  
+
+
+/* Home Page Styles */
+#home {
+    background-image: url('https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/YKbL494Mv8Ip3qgy/whatsapp-image-2023-01-31-at-9.40.45-pm-dWxpDb2pNbCaxERZ.jpeg');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.home-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Background opacity */
+    padding: 100px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.home-content h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.home-content h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.home-content .btn {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+/* About Us Page Styles */
+
+.about-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.about-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-text h1, .about-content h1 {
+    padding-bottom: 25px;
+    font-size: 36px;
+    margin: 0;
+}
+
+.about-text p {
+    font-size: 18px;
+}
+
+.about-content p {
+    text-align: justify;
+}
+
+/* certificates Page Styles */
+
+#certificates .container h1{
+    padding-bottom: 25px;
+}
+
+/* contact Page Styles */
+
+.social-links a {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* Donate Page Styles */
+
+#donate h1{
+    padding: 25px 0;
+}
+
+
+
+
+  /* Add responsive styles */
+  @media (max-width: 768px) {
+    .home-content {
+      padding: 50px;
+    }
+
+    .about-text, .about-image {
+      flex: 1;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      height: auto; /* Keep image proportions */
+    }
+
+    .about-info{
+        flex-direction: column;
+    }
+
+    #certificates .container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #donate .image-row img {
+      max-width: 19%;
+      height: auto;
+    }
+  }
